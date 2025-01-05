@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name:  health-insurance-app-service
+  labels:
+    app:  health-insurance-app
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-type: "classic"  # Use AWS Classic Load Balancer (ELB)
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8082
+    protocol: TCP
+  selector:
+    app:  health-insurance-app
