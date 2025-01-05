@@ -10,7 +10,7 @@ spec:
   type: LoadBalancer
   ports:
   - port: 80
-    targetPort: 8082
+    targetPort: 8081
     protocol: TCP
   selector:
     app:  health-insurance-app
