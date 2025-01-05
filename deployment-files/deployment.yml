@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: health-insurance-app-container
-        image: gayatrihedau/myproject2:2
+        image: gayatrihedau/myproject2:4
         ports:
         - containerPort: 8082
